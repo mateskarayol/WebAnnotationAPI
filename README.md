@@ -80,3 +80,22 @@ In order to run front-end on local environment follow the steps below :
 4. UnitTests
 4.1. Mystream Unit Tests
 Run “heroku logs”
+
+
+### Annotation Server Unit Tests
+
+The tests below asserts that repository save various types of annotations properly. For each case, relevant json file is used and relevant annotation type is saved then required assertions are done. Then saved annotation is deleted to make the test cases sustainable and not to increase data size. All tests are
+runned via mvn clean package commands before deployment. So, the functionality of the repository and service is checked before production.
+
+Repository Tests :
+
+test_save_imageTarget test_save_textTarget test_save_bodyWithVideo test_save_bodyWithImage test_save_bodyWithText 
+test_findByTarget_SourceLike
+
+Service Tests : 
+
+test_saveAnnotation_imageTarget
+test_saveAnnotation_textTarget test_saveAnnotation_bodyWithVideo test_saveAnnotation_bodyWithImage
+test_saveAnnotation_bodyWithText test_searchAnnotationWithSource
+Relevant test json-ld structures are located as mystream/MyAnnotation/src/test/resources/***.json in
+project.
