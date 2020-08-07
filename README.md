@@ -83,7 +83,7 @@ In order to run front-end on local environment follow the steps below :
 10. Run “heroku logs”
 
 
-### Annotation Server Unit Tests
+### WebAnnotationAPI Unit Tests
 
 The tests below asserts that repository save various types of annotations properly. For each case, relevant json file is used and relevant annotation type is saved then required assertions are done. Then saved annotation is deleted to make the test cases sustainable and not to increase data size. All tests are
 runned via mvn clean package commands before deployment. So, the functionality of the repository and service is checked before production.
