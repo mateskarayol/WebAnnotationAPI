@@ -63,7 +63,7 @@ In order to run front-end on local environment follow the steps below :
 1. Open terminal
 2. Run “git clone  https://github.com/mateskarayol/WebAnnotationAPI”
 3. Open IntelliJ or any preferred IDE
-4. Open project .../mystream/MyAnnotation
+4. Open project .../WebAnnotationAPI
 5. Build project
 6. Run “mvn clean install”
 7. Start
@@ -73,16 +73,14 @@ In order to run front-end on local environment follow the steps below :
 
 1. First download Heroku command line interface from internet
 2. Open terminal
-3. Go to folder .../mystream/MyAnnotation
+3. Go to folder .../WebAnnotationAPI
 4. Run “heroku login”
 5. Run “heroku git:remote -a mystream-anno”
 6. Run “mvn clean package”
 7. Run “heroku buildpacks:set heroku/jvm”
 8. Run “heroku deploy:jar target/anno-0.0.1-SNAPSHOT.jar --app mystream-annoj”
 9. Run “heroku open”
-4. UnitTests
-4.1. Mystream Unit Tests
-Run “heroku logs”
+10. Run “heroku logs”
 
 
 ### Annotation Server Unit Tests
