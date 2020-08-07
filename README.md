@@ -1,6 +1,8 @@
 ## Web Annotation Rest API
 
-MyAnnotation application is annotation builder module of the Mystream application. It is designed as a separate application server. It consist of two different parts. One of them is a rest service api which is a Spring Boot Application that uses Mongo DB as data storage solution. This module provides opportunity to save annotations based on W3C standards on db and search. Second part is the javascript and html side of the module which integrates the annotation sidebar, save and update annotation, search annotation operations to any page. Custom sidebar is designed to show all the annotations in the current page. In javascript side, annotation-model.js library is used. This library helps to create proper json-ld for various types of annotations in annotating text data. While annotating image data we have changed this library and add some new features to manage image annotations properly, as well. Additionally, Bootstrap, Jcrop, Jquery js libraries is used in the front end side of annotation operations.
+WebAnnotationAPI application is annotation builder module for any web application. It is designed as a separate application server. It consist of two different parts. One of them is a rest service api which is a Spring Boot Application that uses Mongo DB as data storage solution. This module provides opportunity to save annotations based on W3C standards on db and search. 
+
+Second part is the javascript and html side of the module which integrates the annotation sidebar, save and update annotation, search annotation operations to any page. Custom sidebar is designed to show all the annotations in the current page. In javascript side, annotation-model.js library is used. This library helps to create proper json-ld for various types of annotations in annotating text data. While annotating image data we have changed this library and add some new features to manage image annotations properly, as well. Additionally, Bootstrap, Jcrop, Jquery js libraries is used in the front end side of annotation operations.
 Application Specification
 
 - {github_repository}/WebAnnotationAPI
@@ -15,7 +17,7 @@ Application Specification
 
 MongoDb is used in project. Atlas cloud system is used to store database.
 
-Atlas account username : melikeates.ma@gmail.com Atlas account password : mystream1234.
+Atlas account username : ************************ Atlas account password : **************************
  
 Atlas cloud : https://cloud.mongodb.com/user#/atlas/login
 
@@ -49,12 +51,12 @@ Bootstrap : https://getbootstrap.com/
 Annotation Server Production Environment
 https://mystream-anno.herokuapp.com/helloAnnotation
 
-User Manual
+#### User Manual
 
 In order to create community, the following information will be entered to the modal.
 Github Repository : https://github.com/mateskarayol/WebAnnotationAPI
 
-Running Up Annotation Server
+***Running Up WebAnnotationAPI***
 
 In order to run front-end on local environment follow the steps below :
 
@@ -67,7 +69,8 @@ In order to run front-end on local environment follow the steps below :
 7. Start
 8. Open “https://mystream-anno.herokuapp.com/searchAnnotation?source=*” on browser.
  
- 3.8.2. DeploymentofAnnotationServer
+***Deployment of WebAnnotationAPI***
+
 1. First download Heroku command line interface from internet
 2. Open terminal
 3. Go to folder .../mystream/MyAnnotation
@@ -90,12 +93,15 @@ runned via mvn clean package commands before deployment. So, the functionality o
 Repository Tests :
 
 test_save_imageTarget test_save_textTarget test_save_bodyWithVideo test_save_bodyWithImage test_save_bodyWithText 
+
 test_findByTarget_SourceLike
 
 Service Tests : 
 
 test_saveAnnotation_imageTarget
+
 test_saveAnnotation_textTarget test_saveAnnotation_bodyWithVideo test_saveAnnotation_bodyWithImage
+
 test_saveAnnotation_bodyWithText test_searchAnnotationWithSource
-Relevant test json-ld structures are located as mystream/MyAnnotation/src/test/resources/***.json in
-project.
+
+Relevant test json-ld structures are located as mystream/MyAnnotation/src/test/resources/*.json inroject.
