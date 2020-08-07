@@ -1,6 +1,8 @@
 ## Web Annotation Rest API
 
-WebAnnotationAPI application is annotation builder module for any web application. It is designed as a separate application server. It consist of two different parts. One of them is a rest service api which is a Spring Boot Application that uses Mongo DB as data storage solution. This module provides opportunity to save annotations based on W3C standards on db and search. 
+WebAnnotationAPI application is annotation builder module for any web application. It is designed as a separate application server. It consist of two different parts. 
+
+One of them is a rest service api which is a Spring Boot Application that uses Mongo DB as data storage solution. This module provides opportunity to save annotations based on W3C standards on db and search. 
 
 Second part is the javascript and html side of the module which integrates the annotation sidebar, save and update annotation, search annotation operations to any page. Custom sidebar is designed to show all the annotations in the current page. In javascript side, annotation-model.js library is used. This library helps to create proper json-ld for various types of annotations in annotating text data. While annotating image data we have changed this library and add some new features to manage image annotations properly, as well. Additionally, Bootstrap, Jcrop, Jquery js libraries is used in the front end side of annotation operations.
 Application Specification
